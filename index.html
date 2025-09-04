@@ -1,51 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Travel Planner - Home</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="recommendations.html">Recommendations</a></li>
+    </ul>
+  </nav>
 
-    <!-- Introduction -->
-    <div class="container">
-        <h1>Discover Your Next Adventure</h1>
-        <p>Explore the world’s best destinations tailored to your preferences. Find beaches, temples, and cultural hotspots easily!</p>
-    </div>
+  <!-- Home Section -->
+  <section class="hero">
+    <h1>Welcome to Travel Explorer</h1>
+    <p>Discover the perfect destinations just for you – beaches, temples, and countries around the world.</p>
+    <button onclick="showRandomRecommendation()">Get a Recommendation</button>
+    <p id="randomResult"></p>
+  </section>
 
-    <!-- Beach Recommendation -->
-    <div class="container">
-        <h2>Beach Destinations</h2>
-        <img src="images/beach1.jpg" alt="Sunny Beach">
-        <img src="images/beach2.jpg" alt="Tropical Beach">
-    </div>
-
-    <!-- Temple Recommendation -->
-    <div class="container">
-        <h2>Temple Destinations</h2>
-        <img src="images/temple1.jpg" alt="Historic Temple">
-        <img src="images/temple2.jpg" alt="Famous Temple">
-    </div>
-
-    <!-- Country-based Recommendation -->
-    <div class="container">
-        <h2>Recommendations by Country</h2>
-        <img src="images/country1.jpg" alt="Beautiful Country 1">
-        <img src="images/country2.jpg" alt="Beautiful Country 2">
-    </div>
-
-    <footer>
-        &copy; 2025 Travel Planner. All Rights Reserved.
-    </footer>
-
-    <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
