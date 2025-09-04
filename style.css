@@ -4,6 +4,63 @@ body, h1, h2, p, ul, li {
   padding: 0;
 }
 
+
+
+
+/* Make layout responsive */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+  color: #333;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Navigation bar */
+nav {
+  display: flex;
+  flex-wrap: wrap;   /* allows wrapping on smaller screens */
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+}
+
+nav a:hover {
+  background: #ddd;
+  border-radius: 5px;
+}
+
+/* Responsive text */
+h1, h2, p {
+  text-align: center;
+  margin: 10px;
+}
+
+/* Responsive layout for recommendations */
+.recommendations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+
 /* General */
 body {
   margin: 0;
@@ -12,6 +69,25 @@ body {
   color: #333;
 }
 
+/* Suggestions dropdown */
+#suggestions {
+  max-width: 250px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background: #f0f0f0;
+}
 
 
 
