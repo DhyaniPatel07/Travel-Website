@@ -20,6 +20,14 @@
   </nav>
 
   <!-- Home Section -->
+
+   <section class="search-section">
+  <h2>🔎 Find Your Destination</h2>
+  <input type="text" id="searchBar" placeholder="Search destinations..." onkeyup="showSuggestions()">
+  <div id="suggestions"></div>
+  <button onclick="searchDestination()">Search</button>
+  <div id="searchResult"></div>
+</section>
   <section class="hero">
     <h1>Welcome to Travel Explorer</h1>
     <p>Discover the perfect destinations just for you – beaches, temples, and countries around the world.</p>
@@ -30,4 +38,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
